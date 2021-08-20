@@ -156,7 +156,7 @@ nav {
    transform: translateX(0%);
 }
 .hero {
-   height: 70vh;
+   height: 80vh;
    display: flex;
    align-items: center;
 }
@@ -188,7 +188,7 @@ nav {
    font-size: 0.9rem;
    font-weight: 600;
    text-decoration: none;
-   border: 1px solid var(--ltBlueColor);
+   border: 2px solid var(--ltBlueColor);
    border-radius: 100px;
    padding: 10px 30px;
    margin-left: 10px;
@@ -196,6 +196,20 @@ nav {
 }
 .btn {
    margin-left: -12px;
+   margin-top: 25px;
+}
+.pro {
+   display: flex;
+
+   align-items: center;
+}
+.ime {
+   margin-left: -380px;
+   margin-top: -30px;
+}
+.circle {
+   margin-left: 125px;
+   margin-top: -40px;
 }
 
 @media screen and (max-width: 768px) {
