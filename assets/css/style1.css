@@ -10,6 +10,8 @@
    --greenColor: #08cc7f;
    --whiteColor: #ffffff;
 }
+
+/*  */
 * {
    margin: 0;
    padding: 0;
@@ -33,6 +35,9 @@ header {
    font-size: 0.875rem;
    font-weight: 500;
    align-items: center;
+}
+.call:hover {
+   color: var(--ltBlueColor);
 }
 .mail {
    flex-grow: 1;
@@ -65,6 +70,12 @@ header {
    background-color: var(--greenColor);
    color: white;
    font-size: 13px;
+   border: 2px solid var(--greenColor);
+}
+.donate:hover {
+   border: 2px solid var(--greenColor);
+   background-color: white;
+   color: var(--greenColor);
 }
 nav {
    display: flex;
@@ -75,7 +86,6 @@ nav {
    display: flex;
 }
 .nav-links {
-   background-color: white;
    display: flex;
    justify-content: space-around;
    width: 70%;
@@ -123,39 +133,30 @@ nav {
    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 1024px) {
-   .nav-links {
-      width: 100%;
-   }
-}
-
-@media screen and (max-width: 993px) {
-   body {
-      overflow-x: hidden;
-   }
-   .nav-links {
-      position: absolute;
-      left: 0px;
-      height: 80vh;
-      top: 20vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-      transform: translateX(-100%);
-      transition: transform 0.5s ease-in;
-   }
-   .nav-links li {
+@keyframes navLinkFade {
+   from {
       opacity: 0;
+      transform: translateX(50px);
    }
-   .burger {
-      display: block;
+   to {
+      opacity: 1;
+      transform: translateX(0px);
    }
 }
-
 .nav-active {
    transform: translateX(0%);
 }
+
+.toggle .line1 {
+   transform: rotate(-45deg) translate(-5px, 5px);
+}
+.toggle .line2 {
+   opacity: 0;
+}
+.toggle .line3 {
+   transform: rotate(45deg) translate(-5px, -5px);
+}
+
 .hero {
    height: 80vh;
    display: flex;
@@ -184,6 +185,12 @@ nav {
    background-color: var(--greenColor);
    color: white;
    margin-right: 10px;
+   border: 2px solid var(--greenColor);
+}
+.donate2:hover {
+   border: 2px solid var(--greenColor);
+   background-color: white;
+   color: var(--greenColor);
 }
 .know {
    font-size: 0.9rem;
@@ -191,9 +198,14 @@ nav {
    text-decoration: none;
    border: 2px solid var(--ltBlueColor);
    border-radius: 100px;
-   padding: 10px 30px;
+   padding: 10px 33px;
    margin-left: 10px;
    color: var(--ltBlueColor);
+}
+.know:hover {
+   border: 2px solid var(--ltBlueColor);
+   background-color: var(--ltBlueColor);
+   color: white;
 }
 .btn {
    margin-left: -12px;
@@ -201,49 +213,58 @@ nav {
 }
 .pro {
    display: flex;
-
    align-items: center;
 }
 .ime {
    margin-left: -380px;
    margin-top: -30px;
-   position: relative;
 }
 .circle {
-   position: relative;
    margin-left: 125px;
    margin-top: -40px;
 }
 
+@media screen and (max-width: 1124px) {
+   body {
+      overflow: hidden;
+   }
+   .ime {
+      margin-left: -380px;
+      margin-top: -30px;
+   }
+   .circle {
+      margin-left: 40px;
+      margin-top: -40px;
+   }
+}
+@media screen and (max-width: 1024px) {
+   .nav-links {
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 993px) {
+   .nav-links {
+      position: absolute;
+      left: 0px;
+      height: 92vh;
+      top: 25vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(-100%);
+      transition: transform 0.5s ease-in;
+   }
+   .nav-links li {
+      opacity: 0;
+   }
+   .burger {
+      display: block;
+   }
+}
 @media screen and (max-width: 768px) {
    header {
       display: none;
    }
-   .circle {
-      display: none;
-   }
-   .ime {
-      display: none;
-   }
-}
-
-@keyframes navLinkFade {
-   from {
-      opacity: 0;
-      transform: translateX(50px);
-   }
-   to {
-      opacity: 1;
-      transform: translateX(0px);
-   }
-}
-
-.toggle .line1 {
-   transform: rotate(-45deg) translate(-5px, 5px);
-}
-.toggle .line2 {
-   opacity: 0;
-}
-.toggle .line3 {
-   transform: rotate(45deg) translate(-5px, -5px);
 }
