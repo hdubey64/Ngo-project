@@ -60,11 +60,17 @@ header {
 .donate {
    margin-left: 10px;
    text-decoration: none;
+   border: 2px solid var(--greenColor);
    border-radius: 100px;
    padding: 7px 15px;
    background-color: var(--greenColor);
    color: white;
    font-size: 13px;
+}
+.donate:hover {
+   color: var(--greenColor);
+   border: 2px solid var(--greenColor);
+   background-color: white;
 }
 nav {
    display: flex;
@@ -182,21 +188,33 @@ nav {
    font-size: 0.9rem;
    font-weight: 600;
    text-decoration: none;
+   border: 2px solid var(--greenColor);
    border-radius: 100px;
    padding: 10px 30px;
    background-color: var(--greenColor);
    color: white;
    margin-right: 10px;
 }
+.donate2:hover {
+   color: var(--greenColor);
+   border: 2px solid var(--greenColor);
+   background-color: white;
+}
 .know {
    font-size: 0.9rem;
    font-weight: 600;
    text-decoration: none;
+
    border: 2px solid var(--ltBlueColor);
    border-radius: 100px;
    padding: 10px 30px;
    margin-left: 10px;
    color: var(--ltBlueColor);
+}
+.know:hover {
+   color: white;
+   border: 2px solid var(--ltBlueColor);
+   background-color: var(--ltBlueColor);
 }
 .btn {
    margin-left: -12px;
@@ -223,10 +241,7 @@ nav {
    margin: 5px 0;
 }
 /* Mission start here */
-.mission {
-   padding: 25px;
-   border: 2px solid blue;
-}
+
 .section-title {
    text-align: center;
 }
@@ -249,8 +264,132 @@ nav {
    border-radius: 100px;
 }
 
-.tree {
-   border: 2px solid red;
+.missionBg {
+   background-image: url(/assets/images/mission/Group\ 191.svg);
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-size: 90%;
+   width: 100%;
+   height: 100%;
+}
+.cantent {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.mission-card {
+   margin: 45px 0;
+   border: none;
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.mission-card:nth-child(2) {
+   align-self: flex-end;
+}
+.mission-card:nth-child(1)::before {
+   content: "1";
+   position: absolute;
+   font-size: 3.5rem;
+   color: var(--greenColor);
+   opacity: 0.6;
+   top: -48px;
+   font-weight: 500;
+   left: 10px;
+}
+.mission-card:nth-child(2)::before {
+   content: "2";
+   position: absolute;
+   font-size: 3.5rem;
+   color: var(--greenColor);
+   opacity: 0.6;
+   top: -48px;
+   font-weight: 500;
+   left: 10px;
+}
+.mission-card:nth-child(3)::before {
+   content: "3";
+   position: absolute;
+   font-size: 3.5rem;
+   color: var(--greenColor);
+   opacity: 0.6;
+   top: -48px;
+   font-weight: 500;
+   left: 10px;
+}
+
+.cardCantent h4 {
+   font-size: 1.2rem;
+   color: var(--ltBlueColor);
+   padding: 10px 10px 0 50px;
+}
+
+.cardCantent p {
+   font-size: 0.8rem;
+   font-weight: 500;
+   padding: 0 10px 10px 50px;
+   color: var(--ltGrayColor);
+}
+.aboutSection h2 {
+   font-size: 2rem;
+   color: var(--ltBlueColor);
+   text-decoration: underline;
+   position: relative;
+   margin: 0 auto;
+   width: max-content;
+}
+.aboutSection h2::before {
+   position: absolute;
+   bottom: -6px;
+   right: 0;
+   content: "";
+   width: 60%;
+   height: 3px;
+   background-color: var(--greenColor);
+   border-radius: 100px;
+}
+.aboutSection {
+   background-image: linear-gradient(rgba(0, 0, 5, 0), var(--ltGreenColor));
+}
+.about-content {
+   display: flex;
+   align-items: center;
+   height: 70vh;
+}
+.content-left h3 {
+   width: 75%;
+   font-size: 2rem;
+   color: var(--ltBlueColor);
+
+   font-weight: 500;
+   padding: 5px 60px 5px 5px;
+}
+.content-left p {
+   text-justify: auto;
+   font-size: 1.15rem;
+   color: var(--ltBlueColor);
+
+   padding: 5px 60px 5px 5px;
+}
+.content-right {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.know2 {
+   font-size: 0.9rem;
+   font-weight: 600;
+   text-decoration: none;
+
+   border: 2px solid var(--ltBlueColor);
+   border-radius: 100px;
+   padding: 10px 30px;
+   margin-left: 10px;
+   color: white;
+   background-color: var(--ltBlueColor);
+}
+.know2:hover {
+   color: var(--ltBlueColor);
+   border: 2px solid var(--ltBlueColor);
+   background-color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -261,6 +400,9 @@ nav {
       display: none;
    }
    .ime {
+      display: none;
+   }
+   .tree1 img {
       display: none;
    }
 }
