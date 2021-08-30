@@ -244,6 +244,7 @@ nav {
 
 .section-title {
    text-align: center;
+   margin: 40px 0;
 }
 .section-title h2 {
    font-size: 2rem;
@@ -413,7 +414,6 @@ nav {
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   
 }
 .payment-btn a {
    background-color: white;
@@ -421,7 +421,54 @@ nav {
 
    border-radius: 10px 0 10px 0;
 }
+.blogSection {
+   background-color: rgba(240, 240, 240, 10);
+}
+.card-body {
+   margin: 0;
+   padding: 0;
+}
+.card-title {
+   font-size: 1.5rem;
+   color: var(--ltGrayColor);
+   padding: 10px 0;
+}
 
+.card1 {
+   margin: 0 auto;
+
+   padding: 10px;
+}
+
+.blog-profile {
+   text-decoration: none;
+   display: flex;
+}
+.pro-name h5 {
+   color: var(--ltGrayColor);
+   font-size: 1.2rem;
+   margin: 3px 0 -5px 10px;
+}
+.pro-name p {
+   color: var(--ltGrayColor);
+   font-size: 0.8rem;
+   margin-top: 10px;
+   margin: 5px 0 0 10px;
+   font-weight: 500;
+}
+.date-time {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 50px 10px 0;
+   font-size: 0.9rem;
+   color: var(--ltBlueColor);
+}
+.card-text {
+   font-size: 0.9rem;
+   margin: -10px 0 0 0;
+   color: var(--ltBlueColor);
+   font-weight: 500;
+}
 @media screen and (max-width: 768px) {
    header {
       display: none;
