@@ -245,7 +245,7 @@ nav {
 .section-title {
    text-align: center;
 }
-.mission h2 {
+.section-title h2 {
    font-size: 2rem;
    color: var(--ltBlueColor);
    text-decoration: underline;
@@ -253,7 +253,7 @@ nav {
    margin: 0 auto;
    width: max-content;
 }
-.mission h2::before {
+.section-title h2::before {
    position: absolute;
    bottom: -6px;
    right: 0;
@@ -328,24 +328,7 @@ nav {
    padding: 0 10px 10px 50px;
    color: var(--ltGrayColor);
 }
-.aboutSection h2 {
-   font-size: 2rem;
-   color: var(--ltBlueColor);
-   text-decoration: underline;
-   position: relative;
-   margin: 0 auto;
-   width: max-content;
-}
-.aboutSection h2::before {
-   position: absolute;
-   bottom: -6px;
-   right: 0;
-   content: "";
-   width: 60%;
-   height: 3px;
-   background-color: var(--greenColor);
-   border-radius: 100px;
-}
+
 .aboutSection {
    background-image: linear-gradient(rgba(0, 0, 5, 0), var(--ltGreenColor));
 }
@@ -390,6 +373,53 @@ nav {
    color: var(--ltBlueColor);
    border: 2px solid var(--ltBlueColor);
    background-color: white;
+}
+/* .supportSection {
+   height: 92vh;
+} */
+.supportSection {
+   margin-top: 90px;
+}
+.support {
+   height: 40vh;
+   margin-top: 90px;
+   background-image: url(/assets/images/support/Group\ 148.png);
+   background-repeat: no-repeat;
+   object-fit: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.support-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.support-content h3 {
+   line-height: 60px;
+   font-size: 2.5rem;
+   color: white;
+   font-weight: 600;
+   padding: 5px 50px 5px 60px;
+}
+.support-content p {
+   text-justify: auto;
+   font-size: 1.15rem;
+   color: white;
+   font-weight: 600;
+   padding: 5px 10px 5px 60px;
+}
+.payment-btn {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   
+}
+.payment-btn a {
+   background-color: white;
+   padding: 10px 15px;
+
+   border-radius: 10px 0 10px 0;
 }
 
 @media screen and (max-width: 768px) {
