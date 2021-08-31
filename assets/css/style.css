@@ -375,9 +375,7 @@ nav {
    border: 2px solid var(--ltBlueColor);
    background-color: white;
 }
-/* .supportSection {
-   height: 92vh;
-} */
+
 .supportSection {
    margin-top: 90px;
 }
@@ -391,6 +389,9 @@ nav {
    justify-content: center;
    align-items: center;
 }
+.row {
+   padding: 050px;
+}
 .support-content {
    display: flex;
    flex-direction: column;
@@ -401,14 +402,12 @@ nav {
    font-size: 2.5rem;
    color: white;
    font-weight: 600;
-   padding: 5px 50px 5px 60px;
 }
 .support-content p {
    text-justify: auto;
    font-size: 1.15rem;
    color: white;
    font-weight: 600;
-   padding: 5px 10px 5px 60px;
 }
 .payment-btn {
    display: flex;
@@ -465,10 +464,70 @@ nav {
 }
 .card-text {
    font-size: 0.9rem;
-   margin: -10px 0 0 0;
+   margin-top: -10px;
    color: var(--ltBlueColor);
    font-weight: 500;
 }
+.teamSection {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+.teamSection > p {
+   width: 70%;
+   font-weight: 500;
+}
+.card2 {
+   text-align: center;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+   padding: 15px 0;
+}
+footer {
+   background-color: #030820;
+}
+.logo2 {
+   display: flex;
+}
+.footer-brand a {
+   text-decoration: none;
+   color: white;
+   font-weight: 500;
+   font-size: 1.5rem;
+   display: flex;
+   justify-content: baseline;
+   margin-top: 10px;
+   margin-left: 5px;
+}
+.footer-brand p {
+   color: white;
+   opacity: 0.8;
+   font-size: 1.1rem;
+   margin-top: -6px;
+   margin-left: 5px;
+}
+.footer-content1 P {
+   color: white;
+   opacity: 0.8;
+}
+
+.read {
+   text-decoration: none;
+   border: 2px solid var(--greenColor);
+   border-radius: 100px;
+   padding: 3px 25px;
+   color: white;
+   font-size: 13px;
+}
+.btn2 {
+   margin-top: 25px;
+}
+.read:hover {
+   color: white;
+   border: 2px solid var(--greenColor);
+   background-color: var(--greenColor);
+}
+
 @media screen and (max-width: 768px) {
    header {
       display: none;
