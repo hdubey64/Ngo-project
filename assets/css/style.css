@@ -500,15 +500,15 @@ footer {
    margin-left: 5px;
 }
 .footer-brand p {
-   color: white;
-   opacity: 0.8;
+   color: var(--grayColor);
+
    font-size: 1.1rem;
    margin-top: -6px;
    margin-left: 5px;
 }
 .footer-content1 P {
-   color: white;
-   opacity: 0.8;
+   color: var(--grayColor);
+   font-size: 0.9rem;
 }
 
 .read {
@@ -526,6 +526,101 @@ footer {
    color: white;
    border: 2px solid var(--greenColor);
    background-color: var(--greenColor);
+}
+.section-title2 {
+   text-align: center;
+   margin: 20px 0;
+}
+.section-title2 h2 {
+   font-size: 1.5rem;
+   color: white;
+   text-decoration: underline;
+   position: relative;
+   margin: 0 auto;
+   width: max-content;
+}
+.section-title2 h2::before {
+   position: absolute;
+   bottom: -6px;
+   right: 0;
+   content: "";
+   width: 60%;
+   height: 3px;
+   background-color: var(--greenColor);
+   border-radius: 100px;
+}
+
+.importent-link {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 0px 0 0 76px;
+}
+.importent-link a {
+   color: var(--grayColor);
+   font-size: 0.8rem;
+
+   text-decoration: none;
+   font-weight: 500;
+}
+.call2 {
+   padding: 0 10px;
+   text-decoration: none;
+   color: var(--grayColor);
+   font-size: 0.8rem;
+   font-weight: 500;
+   align-items: center;
+}
+.mail2 {
+   flex-grow: 1;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 10px;
+}
+.mail2 a {
+   text-decoration: none;
+   color: var(--grayColor);
+   font-size: 0.8rem;
+   font-weight: 500;
+}
+.mail3 {
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 0 10px;
+}
+.mail3 a {
+   text-decoration: none;
+   color: var(--grayColor);
+   font-size: 0.875rem;
+   font-weight: 500;
+}
+.mail3 span {
+   margin-left: 83px;
+}
+
+.footer-content2 P {
+   color: var(--grayColor);
+   font-size: 0.9rem;
+}
+.main {
+   border-bottom: 2px solid var(--dkGrayColor);
+}
+.copy {
+   display: flex;
+   justify-content: center;
+   color: var(--grayColor);
+}
+.copy p {
+   padding-top: 15px;
+   width: 30%;
+   font-size: 0.875rem;
+   text-align: center;
+}
+.copy span {
+   color: #08cc7f;
+   text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
