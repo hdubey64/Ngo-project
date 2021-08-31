@@ -609,18 +609,23 @@ footer {
 }
 .copy {
    display: flex;
+   flex-direction: column;
    justify-content: center;
    color: var(--grayColor);
 }
-.copy p {
-   padding-top: 15px;
-   width: 30%;
+.copy1 {
+   margin-top: 15px;
    font-size: 0.875rem;
    text-align: center;
 }
 .copy span {
    color: #08cc7f;
    text-decoration: underline;
+}
+.copy2 {
+   margin-top: -20px;
+   font-size: 0.875rem;
+   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
