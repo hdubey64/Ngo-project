@@ -16,17 +16,32 @@
    box-sizing: 0;
    scroll-behavior: smooth;
 }
+section {
+   margin: 15px;
+   padding: 30px 0;
+   border: 2px solid red;
+}
 
 header {
    border-bottom: 2px solid #e4e4e4;
 }
+.box {
+   border-right: 2px solid #e4e4e4;
+   padding: 15px 0;
+}
+.box2 {
+   border-left: 2px solid #e4e4e4;
+   padding: 15px 0;
+}
 
 .topBar {
    display: flex;
-   padding: 15px 0;
+   /* padding: 15px 0; */
 }
+
 .call {
-   border-right: 2px solid #e4e4e4;
+   /* border-right: 2px solid #e4e4e4; */
+
    padding: 0 10px;
    text-decoration: none;
    color: var(--ltGrayColor);
@@ -39,6 +54,7 @@ header {
    display: flex;
    justify-content: space-between;
    padding: 0 10px;
+   align-items: center;
 }
 .mail a {
    text-decoration: none;
@@ -48,7 +64,6 @@ header {
 }
 .signup {
    padding: 0 10px;
-   border-left: 2px solid #e4e4e4;
 }
 .signup a:nth-child(1) {
    text-decoration: none;
@@ -244,7 +259,7 @@ nav {
 
 .section-title {
    text-align: center;
-   margin: 40px 0;
+   /* margin: 40px 0; */
 }
 .section-title h2 {
    font-size: 2rem;
@@ -270,9 +285,7 @@ nav {
    background-repeat: no-repeat;
    background-attachment: scroll;
    background-size: 90%;
-   width: 100%;
-   height: 100%;
-}
+} /*  */
 .cantent {
    height: 100%;
    display: flex;
@@ -316,17 +329,19 @@ nav {
    font-weight: 500;
    left: 10px;
 }
+.cardCantent {
+   padding: 10px 10px 10px 50px;
+}
 
 .cardCantent h4 {
    font-size: 1.2rem;
    color: var(--ltBlueColor);
-   padding: 10px 10px 0 50px;
 }
 
 .cardCantent p {
    font-size: 0.8rem;
    font-weight: 500;
-   padding: 0 10px 10px 50px;
+
    color: var(--ltGrayColor);
 }
 
@@ -376,9 +391,9 @@ nav {
    background-color: white;
 }
 
-.supportSection {
+/* .supportSection {
    margin-top: 90px;
-}
+} */
 .support {
    height: 40vh;
    margin-top: 90px;
@@ -388,17 +403,20 @@ nav {
    display: flex;
    justify-content: center;
    align-items: center;
+   border-top-left-radius: 5rem;
+   border-bottom-right-radius: 5rem;
+   padding: 0 50px;
 }
-.row {
+/* .row {
    padding: 050px;
-}
+} */
 .support-content {
    display: flex;
    flex-direction: column;
    justify-content: center;
 }
 .support-content h3 {
-   line-height: 60px;
+   line-height: 50px;
    font-size: 2.5rem;
    color: white;
    font-weight: 600;
@@ -422,6 +440,15 @@ nav {
 }
 .blogSection {
    background-color: rgba(240, 240, 240, 10);
+}
+.para {
+   display: flex;
+   justify-content: center;
+}
+.para p {
+   width: 70%;
+   padding: 20px;
+   text-align: center;
 }
 .card-body {
    margin: 0;
