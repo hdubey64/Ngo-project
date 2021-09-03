@@ -729,6 +729,15 @@ footer {
    .ime {
       display: none;
    }
+   .mission-card:nth-child(1)::before {
+      top: -45px;
+   }
+   .mission-card:nth-child(2)::before {
+      top: -45px;
+   }
+   .mission-card:nth-child(3)::before {
+      top: -45px;
+   }
 }
 
 @keyframes navLinkFade {
