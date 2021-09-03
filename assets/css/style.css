@@ -17,7 +17,7 @@
    scroll-behavior: smooth;
 }
 section {
-   margin: 15px;
+   margin: 15px 0;
    padding: 30px 0;
    border: 2px solid red;
 }
@@ -154,9 +154,9 @@ nav {
 }
 
 @media screen and (max-width: 993px) {
-   body {
+   /* body {
       overflow-x: hidden;
-   }
+   } */
    .nav-links {
       position: absolute;
       left: 0px;
@@ -181,23 +181,22 @@ nav {
    transform: translateX(0%);
 }
 .hero {
-   height: 73vh;
    display: flex;
    align-items: center;
 }
 .hero h1 {
-   width: 75%;
-   font-size: 3rem;
+   /* width: 75%; */
+   font-size: 3.5rem;
    color: var(--ltBlueColor);
    padding-bottom: 5px;
-   font-weight: 500;
+   font-weight: 700;
 }
 .hero p {
-   width: 85%;
+   /* width: 85%; */
    text-justify: auto;
    font-size: 1.15rem;
    color: var(--ltBlueColor);
-   padding-top: 5px;
+   padding: 5px 10px 0 0;
 }
 .donate2 {
    font-size: 0.9rem;
@@ -219,7 +218,6 @@ nav {
    font-size: 0.9rem;
    font-weight: 600;
    text-decoration: none;
-
    border: 2px solid var(--ltBlueColor);
    border-radius: 100px;
    padding: 10px 30px;
@@ -231,29 +229,31 @@ nav {
    border: 2px solid var(--ltBlueColor);
    background-color: var(--ltBlueColor);
 }
-.btn {
-   margin-left: -12px;
-   margin-top: 25px;
+.hero-btn {
+   display: flex;
+   flex-direction: row;
+   list-style: none;
 }
+
 .pro {
    display: flex;
-
+   flex-direction: column;
    align-items: center;
+   justify-content: center;
 }
 .ime {
-   margin-left: -380px;
-   margin-top: -30px;
+   margin-left: 40px;
+   margin-top: -385px;
    position: relative;
 }
 .circle {
    position: relative;
-   margin-left: 125px;
-   margin-top: -40px;
+   margin-left: 10px;
 }
 .scroll {
    display: flex;
    justify-content: center;
-   margin: 5px 0;
+   margin-top: 55px;
 }
 /* Mission start here */
 
@@ -284,12 +284,22 @@ nav {
    background-image: url(/assets/images/mission/Group\ 191.svg);
    background-repeat: no-repeat;
    background-attachment: scroll;
-   background-size: 90%;
+   background-size: 100%;
 } /*  */
 .cantent {
-   height: 100%;
    display: flex;
    flex-direction: column;
+   justify-content: center;
+}
+.tree {
+   border: 1px solid green;
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.tree img {
+   width: 80%;
 }
 .mission-card {
    margin: 45px 0;
@@ -349,9 +359,17 @@ nav {
    background-image: linear-gradient(rgba(0, 0, 5, 0), var(--ltGreenColor));
 }
 .about-content {
+   margin: 15px 0;
+   padding: 30px 0;
+}
+.content-right {
+   border: 1px solid blue;
    display: flex;
-   align-items: center;
-   height: 70vh;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+.content-right img {
+   width: 90%;
 }
 .content-left h3 {
    width: 75%;
@@ -366,7 +384,7 @@ nav {
    font-size: 1.15rem;
    color: var(--ltBlueColor);
 
-   padding: 5px 60px 5px 5px;
+   padding: 5px 5px 5px 5px;
 }
 .content-right {
    display: flex;
@@ -391,25 +409,20 @@ nav {
    background-color: white;
 }
 
-/* .supportSection {
-   margin-top: 90px;
-} */
 .support {
    height: 40vh;
-   margin-top: 90px;
+   margin: 50px 0 20px 0;
    background-image: url(/assets/images/support/Group\ 148.png);
    background-repeat: no-repeat;
    object-fit: cover;
    display: flex;
    justify-content: center;
    align-items: center;
-   border-top-left-radius: 5rem;
-   border-bottom-right-radius: 5rem;
+   border-top-left-radius: 4rem;
+   border-bottom-right-radius: 4rem;
    padding: 0 50px;
 }
-/* .row {
-   padding: 050px;
-} */
+
 .support-content {
    display: flex;
    flex-direction: column;
@@ -441,13 +454,20 @@ nav {
 .blogSection {
    background-color: rgba(240, 240, 240, 10);
 }
+.blog-content {
+   margin: 15px 0;
+   padding: 30px 0;
+}
+.blog {
+   margin-top: 30px;
+}
 .para {
    display: flex;
    justify-content: center;
 }
 .para p {
    width: 70%;
-   padding: 20px;
+   margin: 60px 0;
    text-align: center;
 }
 .card-body {
@@ -495,6 +515,9 @@ nav {
    color: var(--ltBlueColor);
    font-weight: 500;
 }
+.team-content {
+   padding-bottom: 30px;
+}
 .teamSection {
    display: flex;
    flex-direction: column;
@@ -508,10 +531,12 @@ nav {
 .card2 {
    text-align: center;
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
-   padding: 15px 0;
+   padding: 30px 20px;
 }
 footer {
    background-color: #030820;
+   padding: 30px 0;
+   border: 2px solid red;
 }
 .logo2 {
    display: flex;
@@ -547,7 +572,7 @@ footer {
    font-size: 13px;
 }
 .btn2 {
-   margin-top: 25px;
+   margin: 25px 0;
 }
 .read:hover {
    color: white;
@@ -581,7 +606,7 @@ footer {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   padding: 0px 0 0 76px;
+   padding: 0 0 0 95px;
 }
 .importent-link a {
    color: var(--grayColor);
@@ -663,9 +688,6 @@ footer {
       display: none;
    }
    .ime {
-      display: none;
-   }
-   .tree1 img {
       display: none;
    }
 }
