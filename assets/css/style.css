@@ -413,8 +413,8 @@ nav {
 }
 
 .support {
-   height: 40vh;
-   margin: 50px 0 20px 0;
+   /* height: 45vh; */
+   margin: 25px 0 20px 0;
    background-image: url(/assets/images/support/Group\ 148.png);
    background-repeat: no-repeat;
    object-fit: cover;
@@ -423,7 +423,7 @@ nav {
    align-items: center;
    border-top-left-radius: 4rem;
    border-bottom-right-radius: 4rem;
-   padding: 0 50px;
+   padding: 80px 60px;
 }
 
 .support-content {
@@ -737,6 +737,29 @@ footer {
    }
    .mission-card:nth-child(3)::before {
       top: -45px;
+   }
+   .support {
+      /* height: 100%; */
+      border-top-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+      padding: 80px 15px;
+   }
+   .support-content {
+      text-align: center;
+   }
+   .support-content h3 {
+      line-height: 30px;
+      font-size: 2rem;
+      color: white;
+      font-weight: 600;
+      margin-bottom: 30px;
+   }
+   .support-content p {
+      margin-bottom: 45px;
+   }
+   .payment-btn {
+      border: 1px solid white;
+      justify-content: center;
    }
 }
 
