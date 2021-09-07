@@ -673,7 +673,7 @@ footer {
    font-size: 0.9rem;
 }
 .footer-content1 > p {
-   padding-left: 75px;
+   padding-left: 25px;
 }
 .main {
    border-bottom: 2px solid var(--dkGrayColor);
@@ -790,6 +790,9 @@ footer {
    }
    .content-left p {
       width: 100%;
+   }
+   .section-title2 p {
+      padding-left: 11px;
    }
 }
 
