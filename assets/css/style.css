@@ -19,7 +19,6 @@
 section {
    margin: 15px 0;
    padding: 30px 0;
-   border: 2px solid red;
 }
 
 header {
@@ -40,13 +39,11 @@ header {
 }
 
 .call {
-   /* border-right: 2px solid #e4e4e4; */
-
    padding: 0 10px;
    text-decoration: none;
    color: var(--ltGrayColor);
    font-size: 0.875rem;
-   font-weight: 500;
+   font-weight: 700;
    align-items: center;
 }
 .mail {
@@ -60,7 +57,7 @@ header {
    text-decoration: none;
    color: var(--ltGrayColor);
    font-size: 0.875;
-   font-weight: 500;
+   font-weight: 700;
 }
 .signup {
    padding: 0 10px;
@@ -69,7 +66,7 @@ header {
    text-decoration: none;
    color: var(--ltGrayColor);
    font-size: 0.875;
-   font-weight: 500;
+   font-weight: 700;
    margin-right: 10px;
 }
 .donate {
@@ -80,7 +77,8 @@ header {
    padding: 7px 15px;
    background-color: var(--greenColor);
    color: white;
-   font-size: 13px;
+   font-size: 0.875rem;
+   font-weight: 700;
 }
 .donate:hover {
    color: var(--greenColor);
@@ -99,23 +97,23 @@ nav {
    background-color: white;
    display: flex;
    justify-content: space-around;
-   width: 70%;
-   /* padding-right: 45px; */
+   width: 57%;
+   padding-right: -5px;
 }
 .nav-links li {
    list-style: none;
 }
 .nav-links a {
-   font-size: 0.92rem;
+   font-size: 1rem;
    text-decoration: none;
    list-style: none;
    color: var(--ltGrayColor);
-   font-weight: 500;
+   font-weight: 700;
 }
 .navbar-brand a {
    text-decoration: none;
    color: var(--ltGrayColor);
-   font-weight: 500;
+   font-weight: 700;
    font-size: 1.05rem;
    display: flex;
    justify-content: baseline;
@@ -151,6 +149,9 @@ nav {
    .scroll {
       margin-top: 30px;
    }
+   .content-right img {
+      width: 10%;
+   }
 }
 
 @media screen and (max-width: 993px) {
@@ -175,6 +176,12 @@ nav {
    .burger {
       display: block;
    }
+   .circle img {
+      display: none;
+   }
+   .scroll img {
+      margin-top: 50px;
+   }
 }
 
 .nav-active {
@@ -183,9 +190,12 @@ nav {
 .hero {
    display: flex;
    align-items: center;
+   justify-content: space-between;
+   margin-top: 30px;
+   margin-bottom: -30px;
+   padding-left: 40px;
 }
 .hero h1 {
-   /* width: 75%; */
    font-size: 3.5rem;
    color: var(--ltBlueColor);
    padding-bottom: 5px;
@@ -239,20 +249,21 @@ nav {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   padding-right: 25px;
 }
-.ime {
-   margin-left: 40px;
-   margin-top: -385px;
-   position: relative;
-}
+
 .circle {
    position: relative;
-   margin-left: 10px;
+   display: flex;
+   justify-content: flex-end;
+}
+.size {
+   width: 82%;
 }
 .scroll {
    display: flex;
    justify-content: center;
-   margin-top: 55px;
+   margin-top: 10px;
 }
 /* Mission start here */
 
@@ -291,7 +302,6 @@ nav {
    justify-content: center;
 }
 .tree {
-   border: 1px solid green;
    margin-top: 30px;
    display: flex;
    justify-content: center;
@@ -340,7 +350,7 @@ nav {
    left: 10px;
 }
 .cardCantent {
-   padding: 10px 10px 10px 50px;
+   padding: 15px 10px 15px 50px;
 }
 
 .cardCantent h4 {
@@ -351,6 +361,7 @@ nav {
 .cardCantent p {
    font-size: 0.8rem;
    font-weight: 500;
+   margin: 0;
 
    color: var(--ltGrayColor);
 }
@@ -366,7 +377,6 @@ nav {
    padding: 0;
 }
 .content-right {
-   border: 1px solid blue;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -387,6 +397,7 @@ nav {
    padding: 5px 60px 5px 5px;
 }
 .content-left p {
+   width: 70%;
    text-justify: auto;
    font-size: 1.15rem;
    color: var(--ltBlueColor);
@@ -535,11 +546,12 @@ nav {
    text-align: center;
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
    padding: 30px 20px;
+   margin-top: 30px;
+   border-radius: 5px;
 }
 footer {
    background-color: #030820;
    padding: 30px 0;
-   border: 2px solid red;
 }
 .logo2 {
    display: flex;
@@ -576,6 +588,7 @@ footer {
 }
 .btn2 {
    margin: 25px 0;
+   padding-left: 75px;
 }
 .read:hover {
    color: white;
@@ -659,6 +672,9 @@ footer {
    color: var(--grayColor);
    font-size: 0.9rem;
 }
+.footer-content1 > p {
+   padding-left: 75px;
+}
 .main {
    border-bottom: 2px solid var(--dkGrayColor);
 }
@@ -682,6 +698,11 @@ footer {
    font-size: 0.875rem;
    text-align: center;
 }
+@media screen and (max-width: 990px) {
+   .content-right img {
+      width: 65%;
+   }
+}
 
 @media screen and (max-width: 768px) {
    section {
@@ -689,22 +710,19 @@ footer {
    }
    footer {
       padding: 20px;
+      align-items: flex-start;
    }
    .hero {
-      align-items: center;
+      padding-left: 25px;
    }
    .hero h1 {
       font-size: 2.5rem;
-      text-align: center;
    }
-   .hero p {
-      text-align: center;
-   }
+
    .hero-btn {
-      border: 1px solid blue;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
    }
    .donate2 {
       text-align: center;
@@ -760,6 +778,18 @@ footer {
    .payment-btn {
       border: 1px solid white;
       justify-content: center;
+   }
+   .content-right img {
+      width: 70%;
+   }
+   .section-title2 h2 {
+      margin: 0;
+   }
+   .importent-link {
+      padding-left: 25px;
+   }
+   .content-left p {
+      width: 100%;
    }
 }
 
