@@ -16,9 +16,11 @@
    box-sizing: 0;
    scroll-behavior: smooth;
 }
+
 section {
-   margin: 15px 0;
+   margin: 25px 0;
    padding: 30px 0;
+   /* height: 100vh; */
 }
 
 header {
@@ -103,13 +105,7 @@ nav {
 .nav-links li {
    list-style: none;
 }
-.nav-links a {
-   font-size: 1rem;
-   text-decoration: none;
-   list-style: none;
-   color: var(--ltGrayColor);
-   font-weight: 700;
-}
+
 .navbar-brand a {
    text-decoration: none;
    color: var(--ltGrayColor);
@@ -120,10 +116,30 @@ nav {
    margin-top: 10px;
    margin-left: 5px;
 }
+.nav-links a {
+   font-size: 1rem;
+   font-weight: 700;
+   color: var(--ltGrayColor);
+   text-decoration: underline;
+   position: relative;
+   margin: 0 auto;
+   width: max-content;
+}
+.nav-links a::before {
+   position: absolute;
+   bottom: -2px;
+   right: 0;
+   content: "";
+   width: 60%;
+   height: 2px;
+   background-color: var(--greenColor);
+   border-radius: 100px;
+}
 .navbar-brand p {
    color: var(--ltBlueColor);
-   opacity: 0.8;
    font-size: 0.9rem;
+   opacity: 0.8;
+
    margin-top: -6px;
    margin-left: 5px;
 }
@@ -162,7 +178,7 @@ nav {
       position: absolute;
       left: 0px;
       height: 80vh;
-      top: 20vh;
+      top: 10vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -203,7 +219,7 @@ nav {
 }
 .hero p {
    text-justify: auto;
-   font-size: 1.15rem;
+
    color: var(--ltBlueColor);
    padding: 5px 5px;
 }
@@ -269,10 +285,10 @@ nav {
 
 .section-title {
    text-align: center;
-   /* margin: 40px 0; */
+   margin: 25px 0;
 }
 .section-title h2 {
-   font-size: 2rem;
+   font-size: 2.5rem;
    color: var(--ltBlueColor);
    text-decoration: underline;
    position: relative;
@@ -359,7 +375,6 @@ nav {
 }
 
 .cardCantent p {
-   font-size: 0.8rem;
    font-weight: 500;
    margin: 0;
 
@@ -399,7 +414,7 @@ nav {
 .content-left p {
    width: 70%;
    text-justify: auto;
-   font-size: 1.15rem;
+
    color: var(--ltBlueColor);
 
    padding: 5px 5px 5px 5px;
@@ -424,14 +439,8 @@ nav {
 }
 
 .support {
-   /* height: 45vh; */
    margin: 25px 0 20px 0;
    background-image: url(/assets/images/support/Group\ 148.png);
-   background-repeat: no-repeat;
-   object-fit: cover;
-   display: flex;
-   justify-content: center;
-   align-items: center;
    border-top-left-radius: 4rem;
    border-bottom-right-radius: 4rem;
    padding: 80px 60px;
@@ -450,7 +459,7 @@ nav {
 }
 .support-content p {
    text-justify: auto;
-   font-size: 1.15rem;
+
    color: white;
    font-weight: 600;
 }
@@ -511,7 +520,7 @@ nav {
 }
 .pro-name p {
    color: var(--ltGrayColor);
-   font-size: 0.8rem;
+
    margin-top: 10px;
    margin: 5px 0 0 10px;
    font-weight: 500;
@@ -585,10 +594,11 @@ footer {
    padding: 3px 25px;
    color: white;
    font-size: 13px;
+   margin-left: 0;
 }
 .btn2 {
    margin: 25px 0;
-   padding-left: 75px;
+   padding-left: 25px;
 }
 .read:hover {
    color: white;
