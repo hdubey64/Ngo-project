@@ -9,6 +9,7 @@
    --dkBlueColor: #062265;
    --greenColor: #08cc7f;
    --whiteColor: #ffffff;
+   --h1: 1.1rem;
 }
 * {
    margin: 0;
@@ -22,7 +23,8 @@ section {
    padding: 30px 0;
 }
 p {
-   font-size: 1rem;
+   /* font-size: 1rem; */
+   font-size: var(--h1);
 }
 
 header {
@@ -122,13 +124,15 @@ nav {
    font-size: 1rem;
    font-weight: 700;
    color: var(--ltGrayColor);
-
+   text-decoration: none;
    position: relative;
    margin: 0 auto;
    width: max-content;
 }
-.nav-links a:hover::before {
+.nav-links a:hover {
    text-decoration: underline;
+}
+.nav-links a:hover::before {
    position: absolute;
    bottom: -2px;
    right: 0;
@@ -382,6 +386,7 @@ nav {
 }
 
 .cardCantent p {
+   font-size: var(--h1);
    font-weight: 500;
    margin: 0;
 
@@ -540,7 +545,7 @@ nav {
    color: var(--ltBlueColor);
 }
 .card-text {
-   font-size: 0.9rem;
+   font-size: var(--h1);
    margin-top: -10px;
    color: var(--ltBlueColor);
    font-weight: 500;
@@ -567,7 +572,7 @@ nav {
 }
 footer {
    background-color: #030820;
-   padding: 30px 0;
+   padding: 60px 0 30px 0;
 }
 .logo2 {
    display: flex;
@@ -576,7 +581,7 @@ footer {
    text-decoration: none;
    color: white;
    font-weight: 500;
-   font-size: 1.5rem;
+   font-size: 2rem;
    display: flex;
    justify-content: baseline;
    margin-top: 10px;
@@ -585,7 +590,7 @@ footer {
 .footer-brand p {
    color: var(--grayColor);
 
-   font-size: 1.1rem;
+   font-size: 1.2rem !important;
    margin-top: -6px;
    margin-left: 5px;
 }
@@ -617,7 +622,7 @@ footer {
    margin: 20px 0;
 }
 .section-title2 h2 {
-   font-size: 1.5rem;
+   font-size: 2rem;
    color: white;
    text-decoration: underline;
    position: relative;
@@ -638,21 +643,22 @@ footer {
 .importent-link {
    display: flex;
    flex-direction: column;
+
    justify-content: space-between;
-   padding: 0 0 0 95px;
+   padding-left: 75px;
 }
 .importent-link a {
    color: var(--grayColor);
-   font-size: 0.8rem;
-
+   font-size: var(--h1);
    text-decoration: none;
    font-weight: 500;
+   margin-top: 25px;
 }
 .call2 {
    padding: 0 10px;
    text-decoration: none;
    color: var(--grayColor);
-   font-size: 0.8rem;
+   font-size: var(--h1);
    font-weight: 500;
    align-items: center;
 }
@@ -665,7 +671,7 @@ footer {
 .mail2 a {
    text-decoration: none;
    color: var(--grayColor);
-   font-size: 0.8rem;
+   font-size: var(--h1);
    font-weight: 500;
 }
 .mail3 {
@@ -678,19 +684,20 @@ footer {
 .mail3 a {
    text-decoration: none;
    color: var(--grayColor);
-   font-size: 0.875rem;
+   font-size: var(--h1);
    font-weight: 500;
 }
 .mail3 span {
-   margin-left: 83px;
+   margin-left: 100px;
 }
 
 .footer-content2 P {
    color: var(--grayColor);
-   font-size: 0.9rem;
+   font-size: var(--h1);
 }
 .footer-content1 > p {
    padding-left: 25px;
+   font-size: var(--h1);
 }
 .main {
    border-bottom: 2px solid var(--dkGrayColor);
@@ -777,7 +784,6 @@ footer {
       top: -45px;
    }
    .support {
-      /* height: 100%; */
       border-top-left-radius: 3rem;
       border-bottom-right-radius: 3rem;
       padding: 80px 15px;
@@ -796,7 +802,6 @@ footer {
       margin-bottom: 45px;
    }
    .payment-btn {
-      border: 1px solid white;
       justify-content: center;
    }
    .content-right img {
@@ -830,7 +835,7 @@ footer {
       right: 0;
       content: "";
       width: 60%;
-      height: 2px;
+      height: 3px;
       background-color: var(--greenColor);
       border-radius: 100px;
    }
