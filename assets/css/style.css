@@ -17,6 +17,9 @@
    box-sizing: 0;
    scroll-behavior: smooth;
 }
+body {
+   font-family: "Poppins", sans-serif;
+}
 
 section {
    margin: 25px 0;
