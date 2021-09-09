@@ -686,6 +686,21 @@ footer {
    font-weight: 500;
    margin-top: 25px;
    margin-left: 75px;
+   width: 50%;
+   position: relative;
+}
+.importent-link a:hover {
+   text-decoration: underline;
+}
+.importent-link a:hover::before {
+   position: absolute;
+   bottom: -2px;
+   right: 30;
+   content: "";
+   width: 60%;
+   height: 2px;
+   background-color: var(--greenColor);
+   border-radius: 100px;
 }
 .call2 {
    padding: 0 10px;
