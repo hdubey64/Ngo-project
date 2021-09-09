@@ -47,13 +47,16 @@ header {
    /* padding: 15px 0; */
 }
 
-.call {
+.abcd {
    padding: 0 10px;
    text-decoration: none;
    color: var(--ltGrayColor);
    font-size: 0.875rem;
-   font-weight: 700;
+   font-weight: 500;
    align-items: center;
+}
+.abcd > a {
+   text-decoration: none !important;
 }
 .mail {
    flex-grow: 1;
@@ -66,7 +69,21 @@ header {
    text-decoration: none;
    color: var(--ltGrayColor);
    font-size: 0.875;
-   font-weight: 700;
+   font-weight: 500;
+   position: relative;
+}
+.mail a:nth-child(2):hover {
+   text-decoration: underline;
+}
+.mail a:nth-child(2):hover::before {
+   position: absolute;
+   bottom: -2px;
+   right: 0;
+   content: "";
+   width: 60%;
+   height: 2px;
+   background-color: var(--greenColor);
+   border-radius: 100px;
 }
 .signup {
    padding: 0 10px;
@@ -75,8 +92,22 @@ header {
    text-decoration: none;
    color: var(--ltGrayColor);
    font-size: 0.875;
-   font-weight: 700;
+   font-weight: 500;
    margin-right: 10px;
+   position: relative;
+}
+.signup a:nth-child(1):hover {
+   text-decoration: underline;
+}
+.signup a:nth-child(1):hover::before {
+   position: absolute;
+   bottom: -2px;
+   right: 0;
+   content: "";
+   width: 60%;
+   height: 2px;
+   background-color: var(--greenColor);
+   border-radius: 100px;
 }
 .donate {
    margin-left: 10px;
@@ -87,7 +118,7 @@ header {
    background-color: var(--greenColor);
    color: white;
    font-size: 0.875rem;
-   font-weight: 700;
+   font-weight: 600;
 }
 .donate:hover {
    color: var(--greenColor);
@@ -125,7 +156,7 @@ nav {
 }
 .nav-links a {
    font-size: 1rem;
-   font-weight: 700;
+   font-weight: 500;
    color: var(--ltGrayColor);
    text-decoration: none;
    position: relative;
@@ -646,9 +677,7 @@ footer {
 .importent-link {
    display: flex;
    flex-direction: column;
-
    justify-content: space-between;
-   padding-left: 75px;
 }
 .importent-link a {
    color: var(--grayColor);
@@ -656,6 +685,7 @@ footer {
    text-decoration: none;
    font-weight: 500;
    margin-top: 25px;
+   margin-left: 75px;
 }
 .call2 {
    padding: 0 10px;
