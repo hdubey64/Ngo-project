@@ -415,7 +415,7 @@ nav {
 }
 
 .cardCantent h4 {
-   font-size: 1.2rem;
+   font-size: 1.5em;
    color: var(--ltBlueColor);
 }
 
@@ -544,9 +544,12 @@ nav {
    padding: 0;
 }
 .card-title {
-   font-size: 1.5rem;
+   font-size: 1.4rem;
    color: var(--ltGrayColor);
    padding: 10px 0;
+}
+.card-body h5 {
+   font-size: 1.4rem;
 }
 
 .card1 {
@@ -561,22 +564,26 @@ nav {
 }
 .pro-name h5 {
    color: var(--ltGrayColor);
-   font-size: 1.2rem;
+   font-size: 1.3rem;
    margin: 3px 0 -5px 10px;
 }
 .pro-name p {
    color: var(--ltGrayColor);
-
+   font-size: 0.875rem !important;
    margin-top: 10px;
    margin: 5px 0 0 10px;
    font-weight: 500;
 }
 .date-time {
    display: flex;
+   /* flex-direction: row; */
    justify-content: space-between;
    padding: 10px 50px 10px 0;
-   font-size: 0.9rem;
+   font-size: 0.875rem !important;
    color: var(--ltBlueColor);
+}
+.date-time p {
+   font-size: 0.875rem;
 }
 .card-text {
    font-size: var(--h1);
@@ -770,6 +777,9 @@ footer {
    font-size: 0.875rem;
    text-align: center;
 }
+/* .cardCantent h4 {
+   font-size: 1.5rem;
+} */
 @media screen and (max-width: 990px) {
    .content-right img {
       width: 65%;
