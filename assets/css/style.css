@@ -10,6 +10,8 @@
    --greenColor: #08cc7f;
    --whiteColor: #ffffff;
    --h1: 1.1rem;
+   --para: 0.875rem;
+   --subtitle: 1rem;
 }
 * {
    margin: 0;
@@ -47,7 +49,7 @@ header {
    /* padding: 15px 0; */
 }
 
-.abcd {
+.phoneIcon {
    padding: 0 10px;
    text-decoration: none;
    color: var(--ltGrayColor);
@@ -55,7 +57,7 @@ header {
    font-weight: 500;
    align-items: center;
 }
-.abcd > a {
+.phoneIcon > a {
    text-decoration: none !important;
 }
 .mail {
@@ -197,6 +199,14 @@ nav {
 }
 .navbars {
    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   background-color: #ffffff;
+}
+
+.scroll img {
+   width: 50px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -352,10 +362,7 @@ nav {
 }
 
 .missionBg {
-   background-image: url(/assets/images/mission/Group\ 191.svg);
-   background-repeat: no-repeat;
-   background-attachment: scroll;
-   background-size: 100%;
+   background-image: linear-gradient(rgba(0, 0, 5, 0), var(--ltGreenColor));
 }
 .cantent {
    display: flex;
@@ -485,7 +492,7 @@ nav {
 }
 
 .support {
-   margin: 25px 0 20px 0;
+   margin: 55px 0 20px 0;
    background-image: url(/assets/images/support/Group\ 148.png);
    border-top-left-radius: 4rem;
    border-bottom-right-radius: 4rem;
@@ -505,9 +512,9 @@ nav {
 }
 .support-content p {
    text-justify: auto;
-
    color: white;
    font-weight: 600;
+   font-size: var(--h1) !important;
 }
 .payment-btn {
    display: flex;
@@ -528,7 +535,7 @@ nav {
    padding: 30px 0;
 }
 .blog {
-   margin-top: 30px;
+   padding: 20px;
 }
 .para {
    display: flex;
@@ -586,7 +593,7 @@ nav {
    font-size: 0.875rem;
 }
 .card-text {
-   font-size: var(--h1);
+   font-size: var(--subtitle);
    margin-top: -10px;
    color: var(--ltBlueColor);
    font-weight: 500;
@@ -783,6 +790,9 @@ footer {
 @media screen and (max-width: 990px) {
    .content-right img {
       width: 65%;
+   }
+   header {
+      display: none;
    }
 }
 
